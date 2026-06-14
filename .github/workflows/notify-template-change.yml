@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Dispatch to core repo
         env:
-          GH_TOKEN: ${{ secrets.PIE_COMPAT_BOT_TOKEN }}
+          GH_TOKEN: ${{ secrets.EXTPORT_BOT_TOKEN }}
         run: |
           gh api repos/extport/core/dispatches \
             -f event_type=template-github-changed \
