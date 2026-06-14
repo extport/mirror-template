@@ -36,7 +36,7 @@ jobs:
           fi
       - name: Resolve build matrix
         id: check
-        uses: extport/mirror-action@2fbb05e5d90686d0f5bc6e40652d97e6da26a25b # v1.1.0
+        uses: extport/mirror-action@ae7646a39bce46b645e2da2b1f9fbdfd44835a18 # v1.1.1
         with:
           mode: resolve-matrix
           release-tag: ${{ steps.tag.outputs.tag }}
@@ -65,7 +65,7 @@ jobs:
         env:
           phpts: ${{ matrix.zts }}
       - name: Build and upload binary
-        uses: extport/mirror-action@2fbb05e5d90686d0f5bc6e40652d97e6da26a25b # v1.1.0
+        uses: extport/mirror-action@ae7646a39bce46b645e2da2b1f9fbdfd44835a18 # v1.1.1
         with:
           mode: build
           release-tag: ${{ needs.check.outputs.release-tag }}
