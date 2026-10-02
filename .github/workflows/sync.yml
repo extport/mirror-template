@@ -20,7 +20,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Sync from upstream
         id: sync
-        uses: extport/mirror-action@ae7646a39bce46b645e2da2b1f9fbdfd44835a18 # v1.1.1
+        uses: extport/mirror-action@9578b956bf9c71097ec142fe726d51af11ac6491 # v1.2.0
         with:
           mode: sync
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -39,7 +39,7 @@ jobs:
         with:
           ref: main
       - name: Validate
-        uses: extport/mirror-action@ae7646a39bce46b645e2da2b1f9fbdfd44835a18 # v1.1.1
+        uses: extport/mirror-action@9578b956bf9c71097ec142fe726d51af11ac6491 # v1.2.0
         with:
           mode: validate
           github-token: ${{ secrets.GITHUB_TOKEN }}
